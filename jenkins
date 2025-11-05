@@ -8,7 +8,7 @@ pipeline{
   stages{
     stage('Checkout') {
       steps {
-        git branch 'main',
+        git branch: 'main',
         url: 'git@github.com:js24z-p8k/source-maven-java-spring-hello-webapp.git'
 
     stage('Build') {
