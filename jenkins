@@ -18,7 +18,7 @@ pipeline {
 
     stage('Image Build') {
       agent {
-        label {'controller'}
+        label 'controller'
       }
       steps {
         sh 'docker image build -t tomcat:hello .'
